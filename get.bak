@@ -10,8 +10,8 @@ categories[cntr_category]="ubuntu"
 requirements["ubuntu"]="requirements_debian"
 cntr_category=$((cntr_category + 1))
 ubuntu() {
-  get_all_debian ubuntu-eglibc http://mirrors.aliyun.com/ubuntu/pool/main/e/eglibc/
-  get_all_debian ubuntu-glibc http://mirrors.aliyun.com/ubuntu/pool/main/g/glibc/
+  get_all_debian ubuntu-eglibc http://archive.ubuntu.com/ubuntu/pool/main/e/eglibc/
+  get_all_debian ubuntu-glibc http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/
   get_all_debian ubuntu-security-eglibc http://security.ubuntu.com/ubuntu/pool/main/e/eglibc/
   get_all_debian ubuntu-security-glibc http://security.ubuntu.com/ubuntu/pool/main/g/glibc/
   get_all_debian ubuntu-old-eglibc http://old-releases.ubuntu.com/ubuntu/pool/main/e/eglibc/
@@ -22,7 +22,7 @@ categories[cntr_category]="debian"
 requirements["debian"]="requirements_debian"
 cntr_category=$((cntr_category + 1))
 debian() {
-  get_all_debian debian-glibc https://mirrors.aliyun.com/debian/pool/main/g/glibc
+  get_all_debian debian-glibc https://deb.debian.org/debian/pool/main/g/glibc
 }
 
 categories[cntr_category]="rpm"
@@ -38,8 +38,8 @@ categories[cntr_category]="centos"
 requirements["centos"]="requirements_centos"
 cntr_category=$((cntr_category + 1))
 centos() {
-  get_from_filelistgz centos-glibc https://mirrors.aliyun.com/centos glibc i686
-  get_from_filelistgz centos-glibc https://mirrors.aliyun.com/centos glibc x86_64
+  get_from_filelistgz centos-glibc http://mirror.centos.org/centos/ glibc i686
+  get_from_filelistgz centos-glibc http://mirror.centos.org/centos/ glibc x86_64
 }
 
 categories[cntr_category]="arch"
@@ -54,13 +54,13 @@ categories[cntr_category]="kali"
 requirements["kali"]="requirements_debian"
 cntr_category=$((cntr_category + 1))
 kali() {
-  get_all_debian kali-glibc https://mirrors.aliyun.com/kali/pool/main/g/glibc/
+  get_all_debian kali-glibc https://http.kali.org/pool/main/g/glibc/
 }
 categories[cntr_category]="parrotsec"
 requirements["parrotsec"]="requirements_debian"
 cntr_category=$((cntr_category + 1))
 parrotsec() {
-  get_all_debian parrotsec-glibc http://mirrors.ustc.edu.cn/parrot/pool/main/g/glibc/
+  get_all_debian parrotsec-glibc https://download.parrot.sh/parrot/pool/main/g/glibc/
 }
 
 

@@ -14,7 +14,7 @@ import TableRow from '@material-ui/core/TableRow';
 import { makeStyles } from '@material-ui/core/styles';
 
 
-const API_BASE = 'https://libc.rip/api';
+const API_BASE = 'http://127.0.0.1/api';
 
 const api = async (path, data) => {
   let resp = await fetch(`${API_BASE}${path}`, {

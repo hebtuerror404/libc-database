@@ -18,4 +18,4 @@ DEFAULT_SYMBOLS = [
     'puts',
     'printf',
 ]
-DOWNLOAD_URL = 'https://libc.rip/download/{}.so'
+DOWNLOAD_URL = 'http://127.0.0.1/download/{}.so'

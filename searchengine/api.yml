@@ -89,4 +89,4 @@ components:
 
 
 servers:
-  - url: https://libc.rip/api
+  - url: http://127.0.0.1/api

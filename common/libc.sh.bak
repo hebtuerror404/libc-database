@@ -208,7 +208,7 @@ get_from_filelistgz() {
   [[ -n "$urls" ]] || die "Failed to get package version"
   for url in $urls
   do
-    get_rpm "$website/${url//.\/./\/}" "$info"
+    get_rpm "$website/$url" "$info"
     sleep .1
   done
 }

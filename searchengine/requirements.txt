@@ -1,4 +1,4 @@
 elasticsearch
-connexion
+connexion[swagger-ui]
 uwsgi
 flask-cors
